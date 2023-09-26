@@ -9,7 +9,7 @@
     @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
     :root {
-      --background-image: url('./images/bg2.jpg');
+      --background-image: url('./images/b1.png');
     }
 
     html,
@@ -289,14 +289,22 @@
       transform: translate3d(0, 0, 0);
       /* Set your background with this */
 
-      background: #348cb2 var(--background-image) bottom left;
+      background: #348cb2 var(--background-image) center left;
       background-repeat: repeat-x;
+      background-size: cover !important;
+      backdrop-filter: brigtness(0.9);
       height: 100%;
       left: 0;
       opacity: 1;
       position: fixed;
       top: 0;
     }
+
+    @media (max-width: 768px) { 
+      #bg {
+        /* background-size: contain !important; */
+      }
+     }
 
     @-moz-keyframes bg {
       0% {
